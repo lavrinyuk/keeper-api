@@ -23,11 +23,3 @@ dotnet run
 | GET | /api/visitors/{id} | Посетитель по id |
 | POST | /api/visitors/{id}/actions | Действие (Introduce/OfferHelp/Threaten) |
 | GET | /api/visitors/{id}/access | Проверка доступа (trust >= 50) |
-
-## Trust
-
-- Introduce: +20
-- OfferHelp: +30
-- Threaten: -20
-- Диапазон: 0–100
-- Каждое действие — 1 раз на посетителя
