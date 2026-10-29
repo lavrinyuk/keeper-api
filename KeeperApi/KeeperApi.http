@@ -1,0 +1,30 @@
+@KeeperApi_HostAddress = http://localhost:5074
+
+POST {{KeeperApi_HostAddress}}/api/visitors
+Accept: application/json
+
+###
+
+GET {{KeeperApi_HostAddress}}/api/visitors
+Accept: application/json
+
+###
+
+GET {{KeeperApi_HostAddress}}/api/visitors/1
+Accept: application/json
+
+###
+
+POST {{KeeperApi_HostAddress}}/api/visitors/1/actions
+Content-Type: application/json
+
+{
+  "action": "Introduce"
+}
+
+###
+
+GET {{KeeperApi_HostAddress}}/api/visitors/1/access
+Accept: application/json
+
+###
